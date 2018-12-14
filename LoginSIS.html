@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>login</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    
+* {box-sizing: border-box;}
+header {
+ 
+    text-align: center;
+    font-size: 45px;
+    padding:40px;
+    
+}
+#title{font-size:28px;}
+
+ 
+.center{
+    /* float: left; */
+    
+    width: 300px; 
+    background-color:rgb(227, 240, 245);
+    height: 400px; 
+    margin:auto;
+    
+    padding-top:30px;
+    padding-left:10px;
+    padding-right:10px;
+ }
+/* .farright{
+    float: left;
+    width:30%;
+    height: 550px ;    
+} */
+footer{
+    margin:100px;
+}
+input{
+    height:40px;
+    width:100%;
+ }
+@media screen and (max-width: 800px) {
+  .left1, .right1,.farright {
+    width: 100%;
+  }
+}
+
+</style>
+</head>
+
+<body> 
+        <header >
+            
+            <p style="font-family: Arial, Helvetica, sans-serif">Student Information System </p>
+           
+        </header> 
+
+   
+        <!-- <div class="left1" align="right">
+           <img src="drawing-of-oak.jpg"   height="400" width="400"  style="opacity: 0.9" title="Ten years grow into a big tree, but a century can reshape a nation" > 
+        </div> -->
+     
+       <div  class="center"  >
+            <form action="signin.php" method="POST" onsubmit="alert" >
+                <div style="text-align: center">
+                        <label id="title" style="font-family: Arial, Helvetica, sans-serif" >Sign In</label><br><br>
+                </div>
+                <div>
+                <label for="UserName" >Username</label ><br> 
+                <input type="text" name="username" value="" id="username" placeholder="Enter Username" required><br><br>
+                <label for="Password" >Password</label><br>                    
+                <input  type="password" name="pword"  id="Password" placeholder="Enter Password" required><br><br>
+                <input id="signin" type="submit" value="Sign in" > <br><br>
+                <span class="psw">Forgot <a href="#">password?</a></span>
+
+                </div>
+            </form>
+        </div>
+        <!-- <div class="farright">
+          
+         </div> -->
+     
+        <footer style="text-align: center;" >
+            <p>Copyright@2018 G54DIS Coursework of the University of Nottingham </p>
+        </footer>
+
+</body>
+</html>
